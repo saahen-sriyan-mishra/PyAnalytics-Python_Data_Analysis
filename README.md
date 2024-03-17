@@ -13,15 +13,20 @@ This project focuses on conducting an in-depth Exploratory Data Analysis (EDA) o
 
 ### Methodology
 1. **Data Preparation**:
-   - Import necessary libraries including pandas, numpy, matplotlib, and seaborn.
-   - Load the dataset and perform initial exploration.
+   - Imported necessary libraries including pandas, numpy, matplotlib, and seaborn.
+   - Loaded the dataset using `pd.read_csv()` function with encoding.
+   - Inspected the first few rows of the dataset using `.head()` to understand its structure.
+   - Checked the columns and data types using `.columns` and `.info()` methods.
+   - Explored basic statistics of numerical features using `.describe()`.
 2. **Data Cleaning**:
-   - Identify and handle missing values using appropriate techniques.
-   - Ensure data consistency and accuracy.
+   - Checked for missing values using `.isnull().sum()` and identified columns with missing values.
+   - Visualized missing values using a heatmap with `sns.heatmap()` to identify patterns.
+   - Removed rows with missing values using `.dropna()` method and verified the removal.
+   - Merged the cleaned dataset with the country code dataset using `pd.merge()`.
 3. **Exploratory Data Analysis**:
-   - Explore numerical variables through descriptive statistics.
-   - Analyze categorical variables and their distributions.
-   - Investigate relationships between features using visualizations such as heatmaps, Pie plot, bar chart, scatter plots etc.
+   - **Online Delivery Analysis:** Utilized seaborn's `countplot()` to analyze online delivery options.Extracted relevant data and visualized distribution.
+   - **Geographic Analysis:** Employed matplotlib's `pie()` to analyze restaurant distribution.Extracted top city data and created pie chart.
+   - **Cuisine Analysis:** Utilized matplotlib's `pie()` to analyze cuisine distribution. Extracted top cuisines data and created pie chart.
 
 ### Key Findings
 1. **Rating Distribution**: The majority of restaurants fall within the rating range of 2.5 to 3.4.
