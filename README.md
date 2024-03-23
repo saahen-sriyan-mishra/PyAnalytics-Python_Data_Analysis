@@ -4,7 +4,7 @@
 
 ### Introduction
 This project focuses on conducting an in-depth Exploratory Data Analysis (EDA) on the Zomato dataset.
-- **main file:** (Zomato EDA.ipynb)
+- **main file**: Zomato EDA.ipynb
 ### Analysis Objectives
 1. **Data Understanding**: Gain insights into the structure and content of the dataset.
 2. **Data Cleaning**: Handle missing values and ensure data integrity.
