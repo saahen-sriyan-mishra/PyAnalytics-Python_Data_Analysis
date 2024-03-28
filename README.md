@@ -1,5 +1,56 @@
 # PYTHON DATA ANALYSIS
 --------------------------------------------------
+
+## Movie DataSet Exploratory Data Analysis (EDA)
+
+### Introduction
+This project focuses on conducting an in-depth Exploratory Data Analysis (EDA) on the Movie dataset to extract valuable insights and trends.
+- **Main File**: Movie_EDA.ipynb
+
+### Analysis Objectives
+1. **Data Understanding**: Gain a comprehensive understanding of the dataset's structure, contents, and attributes.
+2. **Data Cleaning**: Implement data cleaning techniques to handle missing values, ensure data integrity, and prepare the dataset for analysis.
+3. **Exploratory Data Analysis (EDA)**: Utilize various statistical and visualization methods to explore relationships between features, identify patterns, and extract meaningful insights.
+4. **Insights Generation**: Generate actionable insights and recommendations based on the findings from the EDA process.
+
+### Methodology
+1. **Data Preparation**:
+   - Imported necessary libraries including pandas, numpy, matplotlib, and seaborn to facilitate data manipulation and visualization.
+   - Loaded the dataset using `pd.read_csv()` function with appropriate encoding to read the CSV files into pandas DataFrame.
+   - Inspected the initial rows of the dataset using `.head()` method to understand its structure and content.
+   - Reviewed the columns and their data types using `.columns` and `.info()` methods to identify potential issues.
+   - Calculated basic statistical metrics for numerical features using `.describe()` method to gain insights into the data distribution.
+2. **Data Cleaning**:
+   - Identified missing values using `.isnull().sum()` and addressed them appropriately to ensure data completeness.
+   - Visualized missing values using a heatmap with `sns.heatmap()` to identify patterns and understand the extent of missingness.
+   - Removed rows with missing values using `.dropna()` method, considering the impact on the analysis and the dataset's integrity.
+   - Standardized the format of certain columns (e.g., 'year', 'runtime') to maintain consistency and facilitate analysis.
+3. **Exploratory Data Analysis**:
+   - **Highest Rated Movies Analysis**: Utilized `.groupby()` and `.sort_values()` functions to identify movies with the highest ratings for each year.
+   - **Highest Voted Movies Analysis**: Employed `.groupby()`, `.sort_values()`, and `.iloc[]` methods to extract movies with the highest votes for each year.
+   - **Relationship Visualization**: Created scatter plots using `plt.scatter()` to visualize the relationship between votes, gross revenue, and rating, exploring potential correlations.
+   - **Genre Analysis**: Investigated popular genres for each year using `.groupby()` and `.idxmax()` to identify the genre with the highest count.
+   - **Revenue Analysis**: Utilized `.groupby()` and `.sort_values()` to determine movies with the highest and lowest gross revenue for each year.
+   - **Average Duration Analysis**: Calculated the average movie duration for each year using `.groupby()` and `.mean()` functions.
+   - **Director Analysis**: Examined the director with the highest number of movies using `.groupby()` and `.idxmax()` to identify the most prolific director.
+   - **Rating Distribution Across Genre**: Visualized the distribution of movie ratings across different genres using `.groupby()` and `sns.barplot()` functions.
+   - **Top Rated Movies Across Genre**: Identified top-rated movies across genres using `.groupby()`, `.sort_values()`, and `.iloc[]` methods.
+   - **Rating Trends Over Years**: Plotted a line graph to analyze the change in movie ratings over the years using `.groupby()` and `sns.lineplot()`.
+   - **Rating Trends Across Genre Over Years**: Created line graphs to explore how movie ratings change over the years across different genres using `.groupby()` and `sns.lineplot()`.
+   - **Top Stars Analysis**: Determined the top stars appearing in the most movies using `.value_counts()` and `sns.barplot()`.
+   - **Revenue Trends Analysis**: Examined the relationship between years and gross revenue using boxplots with `sns.boxplot()`.
+   - **Runtime vs. Average Revenue Analysis**: Investigated the relationship between runtime and average revenue using line graphs with `sns.lineplot()`.
+
+### Key Findings
+1. **Rating Distribution**: The majority of movies tend to fall within a moderate rating range, with only a few outliers at the extreme ends.
+2. **Genre Preferences**: Certain genres exhibit consistent popularity over the years, while others experience fluctuations, indicating changing audience preferences.
+3. **Revenue Trends**: Gross revenue demonstrates an overall increasing trend over the years, with occasional fluctuations influenced by various factors such as genre, star cast, and director.
+4. **Director Influence**: Certain directors consistently produce successful movies, contributing significantly to the industry's success.
+5. **Runtime Impact**: The duration of movies varies widely, with some genres favoring longer runtimes to accommodate intricate plotlines, while others prefer shorter durations for increased viewer engagement.
+
+--------------------------------------------------
+
+
 ## Zomato DataSet Exploratory Data Analysis (EDA)
 
 ### Introduction
