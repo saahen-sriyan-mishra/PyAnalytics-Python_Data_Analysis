@@ -88,19 +88,19 @@ This project focuses on conducting an in-depth Exploratory Data Analysis (EDA) o
 --------------------------------------------------
 
 
-# Game DataSet Exploratory Data Analysis (EDA)
+## Game DataSet Exploratory Data Analysis (EDA)
 
-## Introduction
+### Introduction
 This project focuses on conducting an in-depth Exploratory Data Analysis (EDA) on the Game dataset to extract valuable insights and trends.
 - **Main File**: Game_EDA.ipynb
 
-## Analysis Objectives
+### Analysis Objectives
 1. **Data Understanding**: Gain a comprehensive understanding of the dataset's structure, contents, and attributes.
 2. **Data Cleaning**: Implement data cleaning techniques to handle missing values, ensure data integrity, and prepare the dataset for analysis.
 3. **Exploratory Data Analysis (EDA)**: Utilize various statistical and visualization methods to explore relationships between features, identify patterns, and extract meaningful insights.
 4. **Insights Generation**: Generate actionable insights and recommendations based on the findings from the EDA process.
 
-## Methodology
+### Methodology
 1. **Data Preparation**:
    - Imported necessary libraries including pandas, numpy, matplotlib, and seaborn to facilitate data manipulation and visualization.
    - Loaded the dataset using `pd.read_csv()` function with appropriate encoding to read the CSV files into pandas DataFrame.
@@ -128,7 +128,7 @@ This project focuses on conducting an in-depth Exploratory Data Analysis (EDA) o
    - **Sales Revenue Trends Analysis**: Examined the relationship between years and sales revenue using boxplots with `sns.boxplot()`.
    - **Playtime vs. Average Revenue Analysis**: Investigated the relationship between playtime and average revenue using line graphs with `sns.lineplot()`.
 
-## Key Findings
+### Key Findings
 1. **Rating Distribution**: The majority of games tend to have moderate ratings, with a few outliers at the extreme ends.
 2. **Genre Preferences**: Certain genres maintain consistent popularity over the years, while others experience fluctuations, reflecting changing user preferences.
 3. **Sales Revenue Trends**: Overall, there is a positive trend in sales revenue over the years, influenced by factors such as genre, platform, and marketing strategies.
